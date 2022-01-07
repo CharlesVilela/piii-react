@@ -1,17 +1,16 @@
 import './App.css';
-import Gerador from './components/gerador/index.js';
-import Cabecalho from './components/cabecalho/index.js';
+import { React } from 'react';
+import Gerador from './components/gerador/index';
+import Cabecalho from './components/cabecalho/index';
 
-function App() {
+const App = function () {
   return (
-    <>
-      <div id="inicio">
-        <Cabecalho></Cabecalho>
-        <Gerador></Gerador>
-        <footer></footer>
-      </div>      
-    </>
+    <div id="inicio">
+      <Cabecalho />
+      <Gerador />
+      <footer />
+    </div>
   );
-}
+};
 
 export default App;
